@@ -19,9 +19,9 @@ import com.xkcoding.design.pattern.creational.simplefactory.WatermelonCandy;
  */
 public class NoPatternTest {
     public static void main(String[] args) {
-        Candy candy = new LemonCandy();
-        candy.taste();
-        candy = new WatermelonCandy();
-        candy.taste();
+        Candy candy1 = new LemonCandy();
+        candy1.taste();
+        Candy candy2 = new WatermelonCandy();
+        candy2.taste();
     }
 }
