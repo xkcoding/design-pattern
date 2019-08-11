@@ -30,22 +30,19 @@ public class ConcurrentExecutor {
         CountDownLatch countDownLatch = new CountDownLatch(requestCount);
 
         for (int i = 0; i < requestCount; i++) {
-            executorService.execute(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        // 获取信号量
-                        semaphore.acquire();
-                        // 执行操作
-                        runHandler.handler();
-                        // 释放信号量
-                        semaphore.release();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    } finally {
-                        // 释放countDownLatch
-                        countDownLatch.countDown();
-                    }
+            executorService.execute(() -> {
+                try {
+                    // 获取信号量
+                    semaphore.acquire();
+                    // 执行操作
+                    runHandler.handler();
+                    // 释放信号量
+                    semaphore.release();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } finally {
+                    // 释放countDownLatch
+                    countDownLatch.countDown();
                 }
             });
         }
