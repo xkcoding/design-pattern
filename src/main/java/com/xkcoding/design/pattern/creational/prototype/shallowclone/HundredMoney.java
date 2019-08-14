@@ -2,7 +2,8 @@ package com.xkcoding.design.pattern.creational.prototype.shallowclone;
 
 import com.xkcoding.design.pattern.creational.prototype.Money;
 import com.xkcoding.design.pattern.creational.prototype.Shape;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * <p>
@@ -12,7 +13,8 @@ import lombok.Data;
  * @author yangkai.shen
  * @date Created in 2019-08-14 15:56
  */
-@Data
+@Getter
+@Setter
 public class HundredMoney implements Money {
     private Shape shape;
 
