@@ -3,7 +3,8 @@ package com.xkcoding.design.pattern.creational.prototype.deepclone;
 import com.xkcoding.design.pattern.creational.prototype.Money;
 import com.xkcoding.design.pattern.creational.prototype.Shape;
 import lombok.Cleanup;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.SneakyThrows;
 
 import java.io.*;
@@ -16,7 +17,8 @@ import java.io.*;
  * @author yangkai.shen
  * @date Created in 2019-08-14 15:56
  */
-@Data
+@Getter
+@Setter
 public class HundredMoney implements Money, Cloneable, Serializable {
     private Shape shape;
 
