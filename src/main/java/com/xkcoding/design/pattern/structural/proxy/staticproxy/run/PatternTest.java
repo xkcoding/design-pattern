@@ -5,7 +5,7 @@ import com.xkcoding.design.pattern.structural.proxy.staticproxy.MusicConductor;
 
 /**
  * <p>
- * 代理模式 - 静态代理测试类
+ * 代理模式 - 静态代理，测试类
  * </p>
  *
  * @author yangkai.shen

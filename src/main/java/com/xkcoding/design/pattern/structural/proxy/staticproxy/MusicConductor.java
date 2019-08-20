@@ -14,6 +14,10 @@ import com.xkcoding.design.pattern.structural.proxy.Ticket;
 public class MusicConductor implements Ticket {
     private MusicTicket ticket;
 
+    /**
+     * 只代理 演唱会门票
+     * @param ticket 演唱会门票
+     */
     public MusicConductor(MusicTicket ticket) {
         this.ticket = ticket;
     }
@@ -29,10 +33,10 @@ public class MusicConductor implements Ticket {
     }
 
     private void before() {
-        System.out.println("方法前增强");
+        System.out.println("静态代理 - 方法前增强");
     }
 
     private void after() {
-        System.out.println("方法后增强");
+        System.out.println("静态代理 - 方法后增强");
     }
 }
