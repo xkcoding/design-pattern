@@ -26,6 +26,16 @@ public class Conductor implements MethodInterceptor {
         return enhancer.create();
     }
 
+    /**
+     * 代理对象执行的所有方法都会走这个方法
+     *
+     * @param o           被代理的对象
+     * @param method      被代理对象需要执行的方法
+     * @param objects     被代理对象需要执行的方法 参数
+     * @param methodProxy 触发父类的方法对象
+     * @return 被代理对象需要执行的方法 返回值
+     * @throws Throwable 抛出的异常信息
+     */
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         before();
