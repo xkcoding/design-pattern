@@ -13,11 +13,12 @@
  * <li>策略模式（Strategy）重要程度：4（5为满分）</li>
  * <li>模板方法模式（Template Method）重要程度：3（5为满分）</li>
  * <li>访问者模式（Visitor）重要程度：1（5为满分）</li>
+ * <li>委派模式（Delegate）重要程度：3（5为满分）</li>
  * </ul>
  * </p>
  *
  * @package: com.xkcoding.design.pattern.behavioral
- * @description: 行为型模式，包含：职责链模式，命令模式，解释器模式，迭代器模式，中介者模式，备忘录模式，观察者模式，状态模式，策略模式，模板方法模式，访问者模式
+ * @description: 行为型模式，包含：职责链模式，命令模式，解释器模式，迭代器模式，中介者模式，备忘录模式，观察者模式，状态模式，策略模式，模板方法模式，访问者模式，委派模式
  * @author: yangkai.shen
  * @date: Created in 2019-02-13 10:07
  * @copyright: Copyright (c) 2019
