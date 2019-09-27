@@ -2,7 +2,7 @@ package com.xkcoding.design.pattern.structural.adapter;
 
 /**
  * <p>
- * 定义标准的电脑USB接口
+ * 定义标准的电脑USB接口类
  * </p>
  *
  * @author yangkai.shen

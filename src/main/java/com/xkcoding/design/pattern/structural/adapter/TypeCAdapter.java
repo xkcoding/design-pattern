@@ -2,7 +2,7 @@ package com.xkcoding.design.pattern.structural.adapter;
 
 /**
  * <p>
- * USB 转 Type-C 转接头
+ * USB接口 转 Type-C接口 转接头
  * </p>
  *
  * @author yangkai.shen
