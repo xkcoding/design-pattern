@@ -10,7 +10,7 @@ import com.xkcoding.design.pattern.behavioral.observer.User;
  * </p>
  *
  * @author yangkai.shen
- * @date Created in 2019/11/26 17:52
+ * @date Created in 2019/11/24 17:52
  */
 public class PatternTest {
     public static void main(String[] args) {
